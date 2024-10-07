@@ -84,13 +84,13 @@ char *TheRoundResult(int Computer, int User)
 void ResetTheColors()
 {
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    WORD wAttributes = FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE | 0; // Set green background and text
+    WORD wAttributes = FOREGROUND_RED | FOREGROUND_GREEN | FOREGROUND_BLUE | 0; 
     SetConsoleTextAttribute(hConsole, wAttributes);
 }
 void WinColorMode()
 { 
     HANDLE hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
-    WORD wAttributes = FOREGROUND_BLUE | BACKGROUND_GREEN; // Set green background and text
+    WORD wAttributes = FOREGROUND_BLUE | BACKGROUND_GREEN; 
     SetConsoleTextAttribute(hConsole, wAttributes);
     
 }
